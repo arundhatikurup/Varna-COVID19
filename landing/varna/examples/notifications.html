@@ -1,0 +1,350 @@
+<!--
+
+
+ The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="../assets/img/favicon.ico">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Varna Dashboard</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+    <!-- CSS Files -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../assets/css/light-bootstrap-dashboard.css?v=2.0.0 " rel="stylesheet" />
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+    <link href="../assets/css/demo.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="sidebar" data-image="../assets/img/sidebar-5.jpg">
+            <!--
+        Tip 1: You can change the color of the sidebar using: data-color="purple | blue | green | orange | red"
+
+        Tip 2: you can also add an image using data-image tag
+    -->
+            <div class="sidebar-wrapper">
+                <div class="logo">
+                    <a href="http://localhost/covid19/landing/index.html" class="simple-text">
+                        <img src="../assets/img/VarnaLogo.JPG"
+                    style="float: middle;
+                        position: relative;
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                        z-index: 1;"
+                    height="100"
+                    width="100"
+                    />
+                    </a>
+                </div>
+                <ul class="nav">
+                    <li>
+                        <a class="nav-link" href="dashboard.html">
+                            <i class="nc-icon nc-chart-pie-35"></i>
+                            <p>Dashboard</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="./user.html">
+                            <i class="nc-icon nc-circle-09"></i>
+                            <p>Profile</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="http://localhost/covid19/landing/varna/examples/table.php">
+                            <i class="nc-icon nc-notes"></i>
+                            <p>List</p>
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./notifications.html">
+                            <i class="nc-icon nc-bell-55"></i>
+                            <p>Notifications</p>
+                        </a>
+                    </li>
+                    <li class="nav-item active active-pro">
+                        <a class="nav-link active" href="upgrade.html">
+                            <i class="nc-icon nc-alien-33"></i>
+                            <p>Hospitals near me</p>
+                        </a>
+                        <a class="nav-link active" href="upgrade.html">
+                            <i class="nc-icon nc-alien-33"></i>
+                            <p>shelters near me</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-panel">
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg " color-on-scroll="500">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#pablo"> Notifications </a>
+                    <button href="" class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-bar burger-lines"></span>
+                        <span class="navbar-toggler-bar burger-lines"></span>
+                        <span class="navbar-toggler-bar burger-lines"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navigation">
+                        <ul class="nav navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link" data-toggle="dropdown">
+                                    <i class="nc-icon nc-palette"></i>
+                                    <span class="d-lg-none">Dashboard</span>
+                                </a>
+                            </li>
+                            <li class="dropdown nav-item">
+                                <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                                    <i class="nc-icon nc-planet"></i>
+                                    <span class="notification">5</span>
+                                    <span class="d-lg-none">Notification</span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                     <a class="dropdown-item" href="#">Spike in temperature, patient in Room#14 Bed#2</a>
+                                    <a class="dropdown-item" href="#">Adam Jones en-route to shelter</a>
+                                    <a class="dropdown-item" href="#">New EHR created</a>
+                                    <a class="dropdown-item" href="#">Emergency care requested for Bed#42</a>
+                                    <a class="dropdown-item" href="#">Spike in temperature, patient in Room#22 Bed#6</a>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <i class="nc-icon nc-zoom-split"></i>
+                                    <span class="d-lg-block">&nbsp;Search</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav ml-auto">
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="http://localhost/covid19/landing/index.html">
+                                    <span class="no-icon">Log out</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- End Navbar -->
+            <div class="content">
+                <div class="container-fluid">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title">Notifications</h4>
+                            <p class="card-category">All your notifications are updated here
+                                
+                            </p>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5>
+                                        <small>General Notifications </small>
+                                    </h5>
+                                    
+                                    <div class="alert alert-info alert-with-icon" data-notify="container">
+                                        <button type="button" aria-hidden="true" class="close" data-dismiss="alert">
+                                            <i class="nc-icon nc-simple-remove"></i>
+                                        </button>
+                                        <span data-notify="icon" class="nc-icon nc-bell-55"></span>
+                                        <span data-notify="message">Dawn Lee with cell number 2134056707, referral number 309123 en-route to shelter</span>
+                                    </div>
+
+                                    <div class="alert alert-info alert-with-icon" data-notify="container">
+                                        <button type="button" aria-hidden="true" class="close" data-dismiss="alert">
+                                            <i class="nc-icon nc-simple-remove"></i>
+                                        </button>
+                                        <span data-notify="icon" class="nc-icon nc-bell-55"></span>
+                                        <span data-notify="message">Order placed for essential supplies including toiler paper rolls, sanitizers, masks etc. from 1435 W Chapman Ave Orange, CA 92868. Order will arrive in 2 days</span>
+                                    </div>
+
+                                    <div class="alert alert-info alert-with-icon" data-notify="container">
+                                        <button type="button" aria-hidden="true" class="close" data-dismiss="alert">
+                                            <i class="nc-icon nc-simple-remove"></i>
+                                        </button>
+                                        <span data-notify="icon" class="nc-icon nc-bell-55"></span>
+                                        <span data-notify="message">Partnered with Aruba and MySphera to enable MySphera’s wearable Bluetooth tags to be monitored by Aruba APs to create ​optimized workflows, lower operational costs, increase reliability and safety, and improve patient care</span>
+                                    </div>
+
+                                    <div class="alert alert-info alert-with-icon" data-notify="container">
+                                        <button type="button" aria-hidden="true" class="close" data-dismiss="alert">
+                                            <i class="nc-icon nc-simple-remove"></i>
+                                        </button>
+                                        <span data-notify="icon" class="nc-icon nc-bell-55"></span>
+                                        <span data-notify="message">Upgrade request sent to Varna team to accelerate analytics for the shelter </span>
+                                    </div>
+
+
+
+
+
+                                </div>
+                                <div class="col-md-6">
+                                    <h5>
+                                        <small>Priority Notifications</small>
+                                    </h5>
+                                    <div class="alert alert-primary">
+                                        <button type="button" aria-hidden="true" class="close" data-dismiss="alert">
+                                            <i class="nc-icon nc-simple-remove"></i>
+                                        </button>
+                                        <span>
+                                            <b> Primary - </b>Lunch hour ended 1 min ago</span>
+                                    </div>
+                                    <div class="alert alert-success">
+                                        <button type="button" aria-hidden="true" class="close" data-dismiss="alert">
+                                            <i class="nc-icon nc-simple-remove"></i>
+                                        </button>
+                                        <span>
+                                            <b> Success - </b> Alloted : #2134567789 to Room #12, Bed #2 </span>
+                                    </div>
+
+                                    <div class="alert alert-warning">
+                                        <button type="button" aria-hidden="true" class="close" data-dismiss="alert">
+                                            <i class="nc-icon nc-simple-remove"></i>
+                                        </button>
+                                        <span>
+                                            <b> Warning - </b>Temperature spike : #2133217115 in Room# 23, Bed# 4</span>
+                                    </div>
+                                    <div class="alert alert-danger">
+                                        <button type="button" aria-hidden="true" class="close" data-dismiss="alert">
+                                            <i class="nc-icon nc-simple-remove"></i>
+                                        </button>
+                                        <span>
+                                            <b> Danger - </b> Contact Hospital immeditely: #2134445567 in Room #21, Bed #12</span>
+                                    </div>
+                                    <div class="alert alert-warning">
+                                        <button type="button" aria-hidden="true" class="close" data-dismiss="alert">
+                                            <i class="nc-icon nc-simple-remove"></i>
+                                        </button>
+                                        <span>
+                                            <b> Warning - </b>Temperature spike : #2138907765 in Room# 15, Bed# 2</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+                            
+                    </div>
+                    <!-- Mini Modal -->
+                    <div class="modal fade modal-mini modal-primary" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header justify-content-center">
+                                    <div class="modal-profile">
+                                        <i class="nc-icon nc-bulb-63"></i>
+                                    </div>
+                                </div>
+                                <div class="modal-body text-center">
+                                    <p>Always have an access to your profile</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-link btn-simple">Back</button>
+                                    <button type="button" class="btn btn-link btn-simple" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  End Modal -->
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!--   -->
+    <!-- <div class="fixed-plugin">
+    <div class="dropdown show-dropdown">
+        <a href="#" data-toggle="dropdown">
+            <i class="fa fa-cog fa-2x"> </i>
+        </a>
+
+        <ul class="dropdown-menu">
+			<li class="header-title"> Sidebar Style</li>
+            <li class="adjustments-line">
+                <a href="javascript:void(0)" class="switch-trigger">
+                    <p>Background Image</p>
+                    <label class="switch">
+                        <input type="checkbox" data-toggle="switch" checked="" data-on-color="primary" data-off-color="primary"><span class="toggle"></span>
+                    </label>
+                    <div class="clearfix"></div>
+                </a>
+            </li>
+            <li class="adjustments-line">
+                <a href="javascript:void(0)" class="switch-trigger background-color">
+                    <p>Filters</p>
+                    <div class="pull-right">
+                        <span class="badge filter badge-black" data-color="black"></span>
+                        <span class="badge filter badge-azure" data-color="azure"></span>
+                        <span class="badge filter badge-green" data-color="green"></span>
+                        <span class="badge filter badge-orange" data-color="orange"></span>
+                        <span class="badge filter badge-red" data-color="red"></span>
+                        <span class="badge filter badge-purple active" data-color="purple"></span>
+                    </div>
+                    <div class="clearfix"></div>
+                </a>
+            </li>
+            <li class="header-title">Sidebar Images</li>
+
+            <li class="active">
+                <a class="img-holder switch-trigger" href="javascript:void(0)">
+                    <img src="../assets/img/sidebar-1.jpg" alt="" />
+                </a>
+            </li>
+            <li>
+                <a class="img-holder switch-trigger" href="javascript:void(0)">
+                    <img src="../assets/img/sidebar-3.jpg" alt="" />
+                </a>
+            </li>
+            <li>
+                <a class="img-holder switch-trigger" href="javascript:void(0)">
+                    <img src="..//assets/img/sidebar-4.jpg" alt="" />
+                </a>
+            </li>
+            <li>
+                <a class="img-holder switch-trigger" href="javascript:void(0)">
+                    <img src="../assets/img/sidebar-5.jpg" alt="" />
+                </a>
+            </li>
+
+            
+
+            <li class="header-title pro-title text-center">Want more components?</li>
+
+
+            <li class="header-title" id="sharrreTitle">Thank you for sharing!</li>
+
+            <li class="button-container">
+				<button id="twitter" class="btn btn-social btn-outline btn-twitter btn-round sharrre"><i class="fa fa-twitter"></i> · 256</button>
+                <button id="facebook" class="btn btn-social btn-outline btn-facebook btn-round sharrre"><i class="fa fa-facebook-square"></i> · 426</button>
+            </li>
+        </ul>
+    </div>
+</div>
+ -->
+</body>
+<!--   Core JS Files   -->
+<script src="../assets/js/core/jquery.3.2.1.min.js" type="text/javascript"></script>
+<script src="../assets/js/core/popper.min.js" type="text/javascript"></script>
+<script src="../assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+<!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
+<script src="../assets/js/plugins/bootstrap-switch.js"></script>
+<!--  Google Maps Plugin    -->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+<!--  Chartist Plugin  -->
+<script src="../assets/js/plugins/chartist.min.js"></script>
+<!--  Notifications Plugin    -->
+<script src="../assets/js/plugins/bootstrap-notify.js"></script>
+<!-- Control Center for Light Bootstrap Dashboard: scripts for the example pages etc -->
+<script src="../assets/js/light-bootstrap-dashboard.js?v=2.0.0 " type="text/javascript"></script>
+<!-- Light Bootstrap Dashboard DEMO methods, don't include it in your project! -->
+<script src="../assets/js/demo.js"></script>
+
+</html>
